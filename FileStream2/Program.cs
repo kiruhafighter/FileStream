@@ -23,7 +23,7 @@ namespace FileStream2
                         }
                     }
             //}
-            Console.WriteLine("Text copied to array succesfully");
+            Console.WriteLine("Text copied to array succesfully.");
         }
         public static void CreateAndWrite(string[] lines , string line2)
         {
@@ -35,7 +35,7 @@ namespace FileStream2
                         sw.WriteLine(lines[i]);
                     }
                 }
-                Console.WriteLine("Text is wrote to array succesfully");
+                Console.WriteLine("Text is wrote to array succesfully.");
             
         }
     }
