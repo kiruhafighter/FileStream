@@ -13,8 +13,8 @@ namespace FileStream2
         {
             
             
-            //using(FileStream fs = new FileStream(line1, FileMode.Open))
-            //{
+            using(FileStream fs = new FileStream(line1, FileMode.Open))
+            {
                 using (StreamReader sr = new StreamReader(line1))
                     {
                         for(int i = 0; i < text.Length; i++)
@@ -22,7 +22,7 @@ namespace FileStream2
                             text[i] = sr.ReadLine();
                         }
                     }
-            //}
+            }
             Console.WriteLine("Text copied to array succesfully.");
         }
         public static void CreateAndWrite(string[] lines , string line2)
